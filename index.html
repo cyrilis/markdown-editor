@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+        html,body{
+            font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","STHeitiSC-Light","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="stylesheets/markdown.css"/>
+    <link rel="stylesheet" href="stylesheets/summernote.css"/>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <link rel="stylesheet" href="stylesheets/prettify.css"/>
+</head>
+<body>
+    <textarea name="" id="post-content" cols="30" rows="10"></textarea>
+    <script src="jquery.js"></script>
+    <script src="javascripts/markdown.min.js"></script>
+    <script src="prettify.js"></script>
+    <script>
+        $(document).ready(function () {window.editor = new MarkdownEditor(document.getElementById("post-content"), {theme: "default"}).editor});
+    </script>
+</body>
+</html>

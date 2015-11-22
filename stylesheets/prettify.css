@@ -1,0 +1,54 @@
+.hljs{display:block;padding:.5em;background:#23241f}.hljs,.hljs-tag,.css .hljs-rules,.css .hljs-value,.css .hljs-function .hljs-preprocessor,.hljs-pragma{color:#f8f8f2}.hljs-strongemphasis,.hljs-strong,.hljs-emphasis{color:#a8a8a2}.hljs-bullet,.hljs-blockquote,.hljs-horizontal_rule,.hljs-number,.hljs-regexp,.alias .hljs-keyword,.hljs-literal,.hljs-hexcolor{color:#ae81ff}.hljs-tag .hljs-value,.hljs-code,.hljs-title,.css .hljs-class,.hljs-class .hljs-title:last-child{color:#a6e22e}.hljs-link_url{font-size:80%}.hljs-strong,.hljs-strongemphasis{font-weight:bold}.hljs-emphasis,.hljs-strongemphasis,.hljs-class .hljs-title:last-child{font-style:italic}.hljs-keyword,.hljs-function,.hljs-change,.hljs-winutils,.hljs-flow,.lisp .hljs-title,.clojure .hljs-built_in,.nginx .hljs-title,.tex .hljs-special,.hljs-header,.hljs-attribute,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-tag .hljs-title,.hljs-value,.alias .hljs-keyword:first-child,.css .hljs-tag,.css .unit,.css .hljs-important{color:#f92672}.hljs-function .hljs-keyword,.hljs-class .hljs-keyword:first-child,.hljs-constant,.css .hljs-attribute{color:#66d9ef}.hljs-variable,.hljs-params,.hljs-class .hljs-title{color:#f8f8f2}.hljs-string,.css .hljs-id,.hljs-subst,.haskell .hljs-type,.ruby .hljs-class .hljs-parent,.hljs-built_in,.sql .hljs-aggregate,.django .hljs-template_tag,.django .hljs-variable,.smalltalk .hljs-class,.django .hljs-filter .hljs-argument,.smalltalk .hljs-localvars,.smalltalk .hljs-array,.hljs-attr_selector,.hljs-pseudo,.hljs-addition,.hljs-stream,.hljs-envvar,.apache .hljs-tag,.apache .hljs-cbracket,.tex .hljs-command,.hljs-prompt,.hljs-link_label,.hljs-link_url{color:#e6db74}.hljs-comment,.hljs-javadoc,.java .hljs-annotation,.python .hljs-decorator,.hljs-template_comment,.hljs-pi,.hljs-doctype,.hljs-deletion,.hljs-shebang,.apache .hljs-sqbracket,.tex .hljs-formula{color:#75715e}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata,.xml .php,.php .xml{opacity:.5}
+
+/* Pretty printing styles. Used with prettify.js. */
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln { color: #000 }  /* plain text */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: rgba(102, 128, 153, 0.4) } /* IE indents via margin-left */
+ol.linenums > li { padding-left: 5px;}
+pre.prettyprint {
+    display: block;
+    display: -webkit-box;
+    background-color: rgba(102, 128, 153, 0.05);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1) inset, 45px 0 0 rgba(102, 128, 153, 0.05) inset, 0 1px 0 rgba(102, 128, 153, 0.05);
+    padding: 9.5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+pre code{
+    display: block;
+}
+/* li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: none } */
+
+/* Alternate shading for lines */
+li.L1, li.L3, li.L5, li.L7, li.L9 { }
+
+/* Use higher contrast and text-weight for printable form. */
+@media screen {
+    .str { color: #718c00; }
+    .kwd { color: #8959a8; }
+    .com { color: #8e908c; }
+    .typ { color: #4271ae; }
+    .lit { color: #f5871f; }
+    .pun { color: #4d4d4c; }
+    .opn { color: #4d4d4c; }
+    .clo { color: #4d4d4c; }
+    .tag { color: #c82829; }
+    .atn { color: #f5871f; }
+    .atv { color: #3e999f; }
+    .dec { color: #f5871f; }
+    .var { color: #c82829; }
+    .fun { color: #4271ae; }
+}
+@media print, projection {
+    .str { color: #006600; }
+    .kwd { color: #006; font-weight: bold; }
+    .com { color: #600; font-style: italic; }
+    .typ { color: #404; font-weight: bold; }
+    .lit { color: #004444; }
+    .pun, .opn, .clo { color: #444400; }
+    .tag { color: #006; font-weight: bold; }
+    .atn { color: #440044; }
+    .atv { color: #006600; }
+}
